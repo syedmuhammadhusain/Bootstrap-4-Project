@@ -38,6 +38,134 @@
             </a>
         </div>
     </nav>
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Reserve a Table</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="card-body">
+                      <div class="form-group row">
+                        <label for="guests" class="col-md-2 col-form-label">Number of Guests</label>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="defaultGroupExample1"
+                            name="groupOfDefaultRadios"
+                          />
+                          <label class="custom-control-label" for="defaultGroupExample1">1</label>
+                        </div>
+        
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="defaultGroupExample2"
+                            name="groupOfDefaultRadios"
+                          />
+                          <label class="custom-control-label" for="defaultGroupExample2"
+                            >2</label
+                          >
+                        </div>
+        
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="defaultGroupExample3"
+                            name="groupOfDefaultRadios"
+                          />
+                          <label class="custom-control-label" for="defaultGroupExample3"
+                            >3</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="defaultGroupExample4"
+                            name="groupOfDefaultRadios"
+                          />
+                          <label class="custom-control-label" for="defaultGroupExample4"
+                            >4</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="defaultGroupExample5"
+                            name="groupOfDefaultRadios"
+                          />
+                          <label class="custom-control-label" for="defaultGroupExample5"
+                            >5</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="defaultGroupExample6"
+                            name="groupOfDefaultRadios"
+                          />
+                          <label class="custom-control-label" for="defaultGroupExample6"
+                            >6</label
+                          >
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="section" class="col-md-2 col-form-label">Section</label>
+                          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                              <label class="btn btn-success active">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                              </label>
+                              <label class="btn btn-danger">
+                                <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                              </label>
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="d&t" class="col-md-2 col-form-label"
+                          >Date and Time</label
+                        >
+                        <div class="col-12 col-sm-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="date"
+                            name="date"
+                            placeholder="Date"
+                          />
+                        </div>
+                        <div class="col-12 col-sm-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="time"
+                            name="time"
+                            placeholder="Time"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                          <button type="submit" class="btn btn-primary">
+                            Reserve
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+            </div>
+        </div>
+        </div>
+    </div>
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
@@ -86,7 +214,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a role="button" class="btn btn-warning btn-lg btn-block" data-toggle="tooltip" data-html="true" title="Or Call Us at: <br><strong>+923465001761</br></strong>" data-placement="bottom" href="#reserve">Reserve Table</a>
+                    <a role="button" class="btn btn-warning btn-lg btn-block" data-toggle="modal" data-target="#reserveModal" >Reserve Table</a>
                 </div>
                 </div>
             </div>
@@ -263,118 +391,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-8 row-content" id="reserve">
-          <div class="card">
-            <form>
-              <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
-              <div class="card-body">
-                <div class="form-group row">
-                  <label for="guests" class="col-md-2 col-form-label"
-                    >Number of Guests</label
-                  >
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input
-                      type="radio"
-                      class="custom-control-input"
-                      id="defaultGroupExample1"
-                      name="groupOfDefaultRadios"
-                    />
-                    <label class="custom-control-label" for="defaultGroupExample1"
-                      >1</label
-                    >
-                  </div>
-  
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input
-                      type="radio"
-                      class="custom-control-input"
-                      id="defaultGroupExample2"
-                      name="groupOfDefaultRadios"
-                    />
-                    <label class="custom-control-label" for="defaultGroupExample2"
-                      >2</label
-                    >
-                  </div>
-  
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input
-                      type="radio"
-                      class="custom-control-input"
-                      id="defaultGroupExample3"
-                      name="groupOfDefaultRadios"
-                    />
-                    <label class="custom-control-label" for="defaultGroupExample3"
-                      >3</label
-                    >
-                  </div>
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input
-                      type="radio"
-                      class="custom-control-input"
-                      id="defaultGroupExample4"
-                      name="groupOfDefaultRadios"
-                    />
-                    <label class="custom-control-label" for="defaultGroupExample4"
-                      >4</label
-                    >
-                  </div>
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input
-                      type="radio"
-                      class="custom-control-input"
-                      id="defaultGroupExample5"
-                      name="groupOfDefaultRadios"
-                    />
-                    <label class="custom-control-label" for="defaultGroupExample5"
-                      >5</label
-                    >
-                  </div>
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input
-                      type="radio"
-                      class="custom-control-input"
-                      id="defaultGroupExample6"
-                      name="groupOfDefaultRadios"
-                    />
-                    <label class="custom-control-label" for="defaultGroupExample6"
-                      >6</label
-                    >
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="d&t" class="col-md-2 col-form-label"
-                    >Date and Time</label
-                  >
-                  <div class="col-12 col-sm-3">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="date"
-                      name="date"
-                      placeholder="Date"
-                    />
-                  </div>
-                  <div class="col-12 col-sm-3">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="time"
-                      name="time"
-                      placeholder="Time"
-                    />
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="offset-md-2 col-md-10">
-                    <button type="submit" class="btn btn-primary">
-                      Reserve
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
+        
       </div>  
 </div>
 
@@ -426,11 +443,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
+
 </body>
 
 </html>
